@@ -1,0 +1,94 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design for Bootstrap</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+<style>
+ul {width:100%; list-style: none; display:block;}
+
+ul li {display:inline-block; width: 20%; height: 40px; float:left; background: #ccc; text-align:center;}
+
+ul li a {display:block; width:100%; height: 40px; position:relative;}
+
+.sub1, .sub2, .sub3 {width:300px; margin: -40px 0 0 0; position:absolute; z-index:-1;
+transition: margin 0.2s ease; 
+-moz-transition: margin 0.2s ease; 
+-webkit-transition: margin 0.2s ease;
+-o-transition: margin 0.2s ease;
+-ms-transition: margin 0.2s ease;}
+
+.submenu {margin:0; background: #666;}
+
+.sub1 li, .sub2 li, .sub3 li {text-align:center; width: 33%;}
+</style>
+ <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+ <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+
+ 
+ 
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+  
+   <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  
+<script>
+$(function() {  
+    $("#drop1").click(function() {  
+        $(".sub1").toggleClass("submenu");
+    });  
+});
+
+$(function() {  
+    $("#drop2").click(function() {  
+        $(".sub2").toggleClass("submenu");
+    });  
+});
+
+$(function() {  
+    $("#drop3").click(function() {  
+        $(".sub3").toggleClass("submenu");
+    });  
+});
+</script>
+</head>
+<body>
+<ul>
+    <li>normal</li>
+    <li><a id="drop1" href="#">drop</a>
+        <ul class="sub1">
+            <li>drop</li>
+            <li>drop</li>
+            <li>drop</li>
+        </ul>
+    </li>
+    <li><a id="drop2" href="#">drop</a>
+        <ul class="sub2">
+            <li>drop</li>
+            <li>drop</li>
+            <li>drop</li>
+        </ul>
+    </li>
+    <li>normal</li>
+    <li><a id="drop3" href="#">drop</a>
+        <ul class="sub3">
+            <li>drop</li>
+            <li>drop</li>
+            <li>drop</li>
+        </ul>
+    </li>
+</ul>
+
+
+</body>
+</html>

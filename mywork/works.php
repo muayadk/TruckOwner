@@ -1,0 +1,1 @@
+<?php $con =new PDO("mysql:host=localhost;dbname=agala","root","")or die("error connection");?>
